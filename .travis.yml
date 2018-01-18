@@ -6,11 +6,4 @@ cache:
     - node_modules
   yarn: true
 script:
-  - npm run build
   - npm test
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  on:
-    branch: master
