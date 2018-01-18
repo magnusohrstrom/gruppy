@@ -23,7 +23,27 @@ describe('pizzaCalculator',()=>{
         const pizza = require('../src/pizzaCalculator');
         expect(pizza.pizzaCalc(20)).toEqual(7);
     });
-});  
+});
+
+/*
+
+Feature: 
+Given that 6 people want to gorge in pizzapie
+when they are thirsty
+then they should get 3 l of sodapopins.
+
+*/
+
+describe('drinks with that?', () => {
+    it('should 6 people buy pizza, they would get 3 l of sodas', ()=>{
+        const pizzaEaters = 6;
+        const pizza = require('../src/pizzaCalculator');
+        expect(pizza.drinkCalc(6)).toEqual({
+            bigbottles: 3,
+            smallBottles:0
+        });
+    })
+});
 
 
 /* 
